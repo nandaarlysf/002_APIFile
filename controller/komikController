@@ -49,6 +49,8 @@ Penulis.findByPk(penulis_id);
                 message: "Penulis tidak ditemukan."
             });
         }
+        const gambar=req.file
+        ? req.file.filename
 
         const komik = await Komik.create({
             judul,
